@@ -172,43 +172,54 @@ public class ListaExercicios {
         int[] n = new int[10];
         String aux;
 
-        aux = JOptionPane.showInputDialog("Informe o número 1: ");
-        n[0] = Integer.parseInt(aux);
+        for(i = 0; i < 10; i++) {
+            aux = JOptionPane.showInputDialog("Informe o numero " + ( i + 1 ));
+            n[i] = Integer.parseInt(aux);
 
-        aux = JOptionPane.showInputDialog("Informe o número 2: ");
-        n[1] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 3: ");
-        n[2] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 4: ");
-        n[3] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 5: ");
-        n[4] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 6: ");
-        n[5] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 7: ");
-        n[6] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 8: ");
-        n[7] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 9: ");
-        n[8] = Integer.parseInt(aux);
-
-        aux = JOptionPane.showInputDialog("Informe o número 10: ");
-        n[9] = Integer.parseInt(aux);
-
-        for (i = 0; i < 10; i++) {
             if(n[i] < 40) {
                 soma += n[i];
             }
         }
 
         JOptionPane.showMessageDialog(null, soma);
+
+//        aux = JOptionPane.showInputDialog("Informe o número 1: ");
+//        n[0] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 2: ");
+//        n[1] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 3: ");
+//        n[2] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 4: ");
+//        n[3] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 5: ");
+//        n[4] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 6: ");
+//        n[5] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 7: ");
+//        n[6] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 8: ");
+//        n[7] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 9: ");
+//        n[8] = Integer.parseInt(aux);
+//
+//        aux = JOptionPane.showInputDialog("Informe o número 10: ");
+//        n[9] = Integer.parseInt(aux);
+//
+//        for (i = 0; i < 10; i++) {
+//            if(n[i] < 40) {
+//                soma += n[i];
+//            }
+//        }
+//
+//        JOptionPane.showMessageDialog(null, soma);
         
     }
 
